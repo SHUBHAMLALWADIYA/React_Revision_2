@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+}
+.navbar-dark {
+    background-color: #212121;
+    color: white;
+  }
+  
+  .navbar-light {
+    background-color: #cecdcd;
+    color: #0a0a0a;
+  }
+  
+  .navbar-nav {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+justify-content: space-around;
+    align-items: center;
+  }
+  
+  .navbar-nav .nav-item {
+    padding: 0 10px;
+  }
+    
