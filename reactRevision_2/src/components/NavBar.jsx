@@ -21,6 +21,7 @@ const NavBar = () => {
 
   // Function to apply the dark mode CSS class
   const applyDarkMode = () => {
+   
     const currentTheme = isDarkMode ? 'dark' : 'light';
     document.documentElement.classList = currentTheme;
   }
@@ -34,7 +35,7 @@ const NavBar = () => {
     <nav className={isDarkMode ? 'navbar-dark' : 'navbar-light'}>
       <div className="navbar-nav">
         <div className="nav-item">
-          <button className="nav-link" onClick={handleLogin}>
+          <button className="nav-link" >
             {isLoggedIn ? 'Logout' : <Link to="/login">Login</Link>}
           </button>
         </div>

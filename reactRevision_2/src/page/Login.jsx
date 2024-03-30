@@ -15,14 +15,18 @@ import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { useState } from 'react';
+import { useContext } from 'react';
+import { LoginlogoutContext } from '../context/LoginLogoutContrxt';
 
 const defaultTheme = createTheme();
 
 export default function Login() {
-  const [token, setToken] = React.useState(null);
-  const [error, setError] = React.useState(null);
-  const [email, setEmail] = React.useState('');
-  const [password, setPassword] = React.useState('');
+  const [token, setToken] = useState(null);
+  const [error, setError] = useState(null);
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const {isLoggedIn, setIsLoggedIn} = useContext(LoginlogoutContext);
   const navigate = useNavigate();
 
   const handleSubmit = async (event) => {
@@ -45,7 +49,8 @@ export default function Login() {
       setEmail('');
       setPassword('');
       navigate('/products');
-   
+      setIsLoggedIn(true)
+      localStorage.setItem("isLogin","true")
       toast.success('Login successful'); // Show success toast
       // If you have other toast notifications to display, you can add them here
     } catch (error) {

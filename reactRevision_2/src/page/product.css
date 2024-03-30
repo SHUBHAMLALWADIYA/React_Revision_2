@@ -3,6 +3,8 @@
 /* Products Grid */
 .products-grid {
     display: grid;
+    width: 80%;
+    margin: auto;
     grid-template-columns: repeat(3, 1fr); /* 3 columns */
     grid-gap: 20px;
   }
@@ -18,6 +20,12 @@
   .product-card img {
     max-width: 100%;
     height: auto;
+    margin-bottom: 10px;
+  }
+  .product-card>img {
+    max-width: 60%;
+    height: 300px;
+ 
     margin-bottom: 10px;
   }
   
