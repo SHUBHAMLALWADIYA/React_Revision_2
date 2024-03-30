@@ -49,3 +49,103 @@
     background-color: #0056b3;
   }
   
+
+  /*skeleton*/
+
+  /* product.css */
+
+/* Skeleton styles */
+.product-card.skeleton {
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.skeleton-image {
+  width: 100px; /* Adjust width as needed */
+  height: 100px; /* Adjust height as needed */
+  background-color: #e0e0e0; /* Light gray color */
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.skeleton-info {
+  flex-grow: 1;
+}
+
+.skeleton-title {
+  width: 80%; /* Adjust width as needed */
+  height: 20px; /* Adjust height as needed */
+  background-color: #e0e0e0; /* Light gray color */
+  margin-bottom: 10px;
+}
+
+.skeleton-text {
+  width: 60%; /* Adjust width as needed */
+  height: 15px; /* Adjust height as needed */
+  background-color: #e0e0e0; /* Light gray color */
+  margin-bottom: 5px;
+}
+
+.skeleton-action {
+  width: 100px; /* Adjust width as needed */
+  height: 30px; /* Adjust height as needed */
+  background-color: #e0e0e0; /* Light gray color */
+  margin-top: 10px;
+}
+
+/* Other styles */
+.products-page {
+  margin: 20px;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.product-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.product-card h3 {
+  margin-top: 10px;
+}
+
+.product-card p {
+  margin: 5px 0;
+}
+
+.pagination {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.pagination li {
+  margin-right: 10px;
+}
+
+.pagination li button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.pagination li button:hover {
+  background-color: #0056b3;
+}
